@@ -5,8 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
+                <div class="card-header">{{ __('Dashboard') }}
+                    <div class="col-md-2"><a href="{{ url('employees') }}" class="btn btn-primary">Employee</a></div>
+                </div>
+                
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
